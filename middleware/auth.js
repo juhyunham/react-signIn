@@ -1,4 +1,4 @@
-import { User } from "../models/User";
+const { User } = require("../models/User");
 
 let auth = (req, rest, next) => {
 	// 인증처리
@@ -15,4 +15,4 @@ let auth = (req, rest, next) => {
 	})
 }
 
-module export = { auth }
+module.exports = { auth }
